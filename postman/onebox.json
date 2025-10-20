@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name": "onebox",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Account",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/account",
+          "host": ["{{baseUrl}}"],
+          "path": ["account"]
+        }
+      }
+    }
+  ]
+}

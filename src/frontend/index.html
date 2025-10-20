@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Email Onebox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>ReachInbox</h2>
+      <button id="inboxBtn">Inbox</button>
+      <button id="sentBtn">Sent</button>
+      <button id="composeBtn">Compose</button>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <input type="text" id="searchInput" placeholder="Search emails...">
+        <button id="searchBtn">🔍</button>
+      </header>
+      <section id="emailList" class="email-list"></section>
+      <section id="emailViewer" class="email-viewer hidden"></section>
+    </main>
+  </div>
+  <div id="composeModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>New Email</h3>
+      <input id="to" type="email" placeholder="To">
+      <input id="subject" type="text" placeholder="Subject">
+      <textarea id="body" placeholder="Type your message..."></textarea>
+      <button id="sendEmailBtn">Send</button>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
